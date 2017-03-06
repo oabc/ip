@@ -1,6 +1,6 @@
 <?php
-#ini_set("display_errors", "On");
-#error_reporting(E_ALL | E_STRICT);
+ini_set("display_errors", "On");
+error_reporting(E_ALL | E_STRICT);
 header('Access-Control-Allow-Origin:*');
 define('SYSROOT',__DIR__);
 define('WWWROOT','');
