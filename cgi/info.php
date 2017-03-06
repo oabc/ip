@@ -9,7 +9,7 @@ $html=new Main(1);
 $e=post('exptime');
 $id=post('id');
 
-$server = $db->sel('select * from getip');
+$server = $db->sel('select * from getip order by lasttime desc');
 
 ?>
 <h1>Users Table</h1>
