@@ -19,6 +19,7 @@ $server = $db->sel('select * from getip');
         <th>ID</th>
         <th>ip</th>
         <th>次数</th>
+        <th>首次时间</th>
         <th>最后时间</th>
     </tr>
 <?php
@@ -30,6 +31,7 @@ for($i=0;$i<count($server);$i++)
 <td><?php echo$server[$i]['ip']?></td>
 <td><?php echo$server[$i]['count']?></td>
 <td><?php echo$server[$i]['time']?></td>
+<td><?php echo$server[$i]['lasttime']?></td>
 </tr>
 <?php
 }

@@ -12,6 +12,6 @@ $db->exec("UPDATE `$table` set `count`=`count`+1 where ip='$ip'");
 }
 else
 {
-$db->exec("INSERT INTO `$table` (`ip`) VALUES ('" .$ip. "')");     
+$db->exec("INSERT INTO `$table` (`ip`,`time`) VALUES ('$ip',now())");     
 }
 $r->o($ip);
